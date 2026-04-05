@@ -267,19 +267,50 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Software Industry Reviews",
-  "url": "https://softwareindustryreviews.com",
-  "description": "Independent, data-driven software rankings built on transparent methodology.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Software Industry Reviews"
-  },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://softwareindustryreviews.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Software Industry Reviews",
+      "url": "https://softwareindustryreviews.com",
+      "description": "Independent, data-driven rankings of business software across CRM, project management, cybersecurity, ERP, email marketing, HR, accounting, and analytics. Updated monthly with transparent methodology.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Listicle Liaison LLC",
+        "url": "https://listicleliaison.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://listicleliaison.com/logo.png"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "partnerships@listicleliaison.com",
+          "contactType": "sales"
+        },
+        "sameAs": [
+          "https://aiindustryreviews.com",
+          "https://smbnewsroom.com",
+          "https://casinoindustryreviews.com",
+          "https://listicleliaison.com"
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Software Industry Rankings Categories",
+      "description": "Independent rankings across 8 software categories",
+      "numberOfItems": 8,
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Best CRM Software 2026", "url": "https://softwareindustryreviews.com/pages/crm-rankings.html"},
+        {"@type": "ListItem", "position": 2, "name": "Best Project Management Software 2026", "url": "https://softwareindustryreviews.com/pages/pm-rankings.html"},
+        {"@type": "ListItem", "position": 3, "name": "Best Cybersecurity Platforms 2026", "url": "https://softwareindustryreviews.com/pages/cyber-rankings.html"},
+        {"@type": "ListItem", "position": 4, "name": "Best ERP Software 2026", "url": "https://softwareindustryreviews.com/pages/erp-rankings.html"},
+        {"@type": "ListItem", "position": 5, "name": "Best Email Marketing Software 2026", "url": "https://softwareindustryreviews.com/pages/email-rankings.html"},
+        {"@type": "ListItem", "position": 6, "name": "Best HR & Payroll Software 2026", "url": "https://softwareindustryreviews.com/pages/hr-rankings.html"},
+        {"@type": "ListItem", "position": 7, "name": "Best Accounting Software 2026", "url": "https://softwareindustryreviews.com/pages/accounting-rankings.html"},
+        {"@type": "ListItem", "position": 8, "name": "Best Analytics & BI Software 2026", "url": "https://softwareindustryreviews.com/pages/analytics-rankings.html"}
+      ]
+    }
+  ]
 }
 </script>
 </head>
