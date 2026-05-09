@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Software Industry Reviews — Trusted Software Rankings & Expert Analysis</title>
-<meta name="description" content="Independent, data-driven software rankings built on transparent methodology. We rank the best CRM, ERP, project management, and cybersecurity software based on real user reviews and expert analysis.">
+<meta name="description" content="Independent, data-driven software rankings built on transparent methodology. We rank the best CRM, ERP, project management, cybersecurity, and SMB software based on real user reviews and expert analysis.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://softwareindustryreviews.com/">
 <meta property="og:title" content="Software Industry Reviews — Trusted Software Rankings">
@@ -93,18 +93,21 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 .cat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 18px;text-decoration:none;color:var(--ink);transition:all .25s;position:relative;overflow:hidden}
 .cat-card:hover{border-color:var(--sky);box-shadow:var(--shadow-md);transform:translateY(-2px)}
 .cat-card-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-.cat-card-icon.blue{background:var(--sky-wash)}.cat-card-icon.green{background:var(--emerald-wash)}.cat-card-icon.amber{background:var(--amber-pale)}.cat-card-icon.slate{background:var(--surface-3)}
+.cat-card-icon.blue{background:var(--sky-wash)}.cat-card-icon.green{background:var(--emerald-wash)}.cat-card-icon.amber{background:var(--amber-pale)}.cat-card-icon.slate{background:var(--surface-3)}.cat-card-icon.gold{background:var(--gold-bg)}
 .cat-card-name{font-size:14.5px;font-weight:600;margin-bottom:2px}
 .cat-card-count{font-size:12.5px;color:var(--ink-4)}
 .cat-card-arrow{position:absolute;top:18px;right:16px;font-size:14px;color:var(--ink-4);transition:all .2s;opacity:0;transform:translateX(-4px)}
 .cat-card:hover .cat-card-arrow{opacity:1;transform:translateX(0)}
+.cat-card.featured{border:1.5px solid var(--gold);background:linear-gradient(135deg,#fefce8 0%,#fef9c3 100%)}
+.cat-card-tag{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);background:#fff;padding:2px 7px;border-radius:3px;margin-bottom:10px;border:1px solid var(--amber-pale)}
 .rankings-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .rank-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:var(--ink);transition:all .25s}
 .rank-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
 .rank-card-top{height:160px;padding:20px;position:relative;display:flex;flex-direction:column;justify-content:flex-end}
-.rank-card-top.crm{background:linear-gradient(135deg,#0c1b2e,#1e3a5f)}.rank-card-top.pm{background:linear-gradient(135deg,#0c2920,#134e3a)}.rank-card-top.erp{background:linear-gradient(135deg,#1e1b2e,#3b2e5a)}
+.rank-card-top.crm{background:linear-gradient(135deg,#0c1b2e,#1e3a5f)}.rank-card-top.pm{background:linear-gradient(135deg,#0c2920,#134e3a)}.rank-card-top.erp{background:linear-gradient(135deg,#1e1b2e,#3b2e5a)}.rank-card-top.smb{background:linear-gradient(135deg,#451a03,#9a3412)}
 .rank-card-badge{position:absolute;top:14px;left:14px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:4px;color:#fff}
 .rank-card-badge.updated{background:var(--sky)}
+.rank-card-badge.new{background:var(--emerald)}
 .rank-card-top-title{font-family:var(--font-display);font-size:20px;color:#fff;line-height:1.25}
 .rank-card-top-count{font-size:12px;color:rgba(255,255,255,.5);margin-top:6px}
 .rank-card-body{padding:18px 20px}
@@ -161,7 +164,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
       "@type": "WebSite",
       "name": "Software Industry Reviews",
       "url": "https://softwareindustryreviews.com",
-      "description": "Independent, data-driven rankings of business software across CRM, project management, cybersecurity, ERP, email marketing, HR, accounting, and analytics.",
+      "description": "Independent, data-driven rankings of business software across CRM, project management, cybersecurity, ERP, SMB software, email marketing, HR, accounting, and analytics.",
       "publisher": {
         "@type": "Organization",
         "name": "Listicle Liaison LLC",
@@ -190,7 +193,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 <section class="hero">
   <div class="hero-inner">
     <div class="fade-up">
-      <div class="hero-tag"><span class="hero-tag-dot"></span> Rankings updated March 2026</div>
+      <div class="hero-tag"><span class="hero-tag-dot"></span> Rankings updated May 2026</div>
       <h1>The Most Trusted<br>Software <em>Rankings</em><br>on the Internet.</h1>
       <p class="hero-sub">We analyze real user reviews, feature depth, pricing transparency, and market presence to rank software across 40+ categories. No pay-to-play. No guesswork.</p>
       <div class="hero-search">
@@ -205,10 +208,10 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
     </div>
     <div class="hero-sidebar fade-up" style="animation-delay:.2s">
       <div class="hero-sidebar-title">Trending rankings</div>
-      <a href="/pages/crm-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">01</div><div><div class="hero-sidebar-text">Best CRM Software for Enterprise</div><div class="hero-sidebar-meta"><span>12 products</span><span class="hero-sidebar-score">4.7 avg</span></div></div></a>
-      <a href="/pages/pm-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">02</div><div><div class="hero-sidebar-text">Top Project Management Tools — SMB</div><div class="hero-sidebar-meta"><span>15 products</span><span class="hero-sidebar-score">4.5 avg</span></div></div></a>
-      <a href="/pages/erp-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">03</div><div><div class="hero-sidebar-text">Best ERP Software — 2026</div><div class="hero-sidebar-meta"><span>12 products</span><span class="hero-sidebar-score">4.4 avg</span></div></div></a>
-      <a href="/pages/cyber-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">04</div><div><div class="hero-sidebar-text">Top Cybersecurity Platforms</div><div class="hero-sidebar-meta"><span>14 products</span><span class="hero-sidebar-score">4.6 avg</span></div></div></a>
+      <a href="/pages/smb-software-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">01</div><div><div class="hero-sidebar-text">Best All-in-One Software for SMBs</div><div class="hero-sidebar-meta"><span>10 products</span><span class="hero-sidebar-score">4.6 avg</span></div></div></a>
+      <a href="/pages/crm-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">02</div><div><div class="hero-sidebar-text">Best CRM Software for Enterprise</div><div class="hero-sidebar-meta"><span>12 products</span><span class="hero-sidebar-score">4.7 avg</span></div></div></a>
+      <a href="/pages/pm-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">03</div><div><div class="hero-sidebar-text">Best Project Management Software</div><div class="hero-sidebar-meta"><span>10 products</span><span class="hero-sidebar-score">4.5 avg</span></div></div></a>
+      <a href="/pages/erp-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">04</div><div><div class="hero-sidebar-text">Best ERP Software — 2026</div><div class="hero-sidebar-meta"><span>10 products</span><span class="hero-sidebar-score">4.4 avg</span></div></div></a>
     </div>
   </div>
 </section>
@@ -228,9 +231,10 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
       <div class="section-eyebrow" id="categories">Categories</div>
       <h2 class="section-title">Browse by software category</h2>
     </div>
-    <a href="/pages/crm-rankings.html" class="section-more">All categories &rarr;</a>
+    <a href="#categories" class="section-more">All categories &darr;</a>
   </div>
   <div class="cat-grid">
+    <a href="/pages/smb-software-rankings.html" class="cat-card featured"><span class="cat-card-tag">New</span><div class="cat-card-icon gold"></div><div class="cat-card-name">All-in-One Software for SMBs</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
     <a href="/pages/crm-rankings.html" class="cat-card"><div class="cat-card-icon blue"></div><div class="cat-card-name">CRM Software</div><div class="cat-card-count">12 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
     <a href="/pages/pm-rankings.html" class="cat-card"><div class="cat-card-icon green"></div><div class="cat-card-name">Project Management</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
     <a href="/pages/cyber-rankings.html" class="cat-card"><div class="cat-card-icon amber"></div><div class="cat-card-name">Cybersecurity</div><div class="cat-card-count">10 platforms ranked</div><span class="cat-card-arrow">&rarr;</span></a>
@@ -249,9 +253,13 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
         <div class="section-eyebrow">Latest</div>
         <h2 class="section-title">Recently published rankings</h2>
       </div>
-      <a href="/pages/crm-rankings.html" class="section-more">All rankings &rarr;</a>
+      <a href="#categories" class="section-more">All rankings &darr;</a>
     </div>
     <div class="rankings-grid">
+      <a href="/pages/smb-software-rankings.html" class="rank-card">
+        <div class="rank-card-top smb"><span class="rank-card-badge new">New</span><div class="rank-card-top-title">Best All-in-One Software for SMBs &mdash; 2026</div><div class="rank-card-top-count">10 products &middot; 240,000+ reviews analyzed</div></div>
+        <div class="rank-card-body"><div class="rank-card-tag">SMB Software</div><div class="rank-card-meta"><span>May 9, 2026</span><span>9 min read</span></div></div>
+      </a>
       <a href="/pages/crm-rankings.html" class="rank-card">
         <div class="rank-card-top crm"><span class="rank-card-badge updated">Live</span><div class="rank-card-top-title">Best CRM Software for Enterprise — 2026</div><div class="rank-card-top-count">12 products &middot; 86,000+ reviews analyzed</div></div>
         <div class="rank-card-body"><div class="rank-card-tag">CRM</div><div class="rank-card-meta"><span>Mar 30, 2026</span><span>14 min read</span></div></div>
@@ -259,10 +267,6 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
       <a href="/pages/pm-rankings.html" class="rank-card">
         <div class="rank-card-top pm"><span class="rank-card-badge updated">Live</span><div class="rank-card-top-title">Best Project Management Software — 2026</div><div class="rank-card-top-count">10 products &middot; 72,000+ reviews analyzed</div></div>
         <div class="rank-card-body"><div class="rank-card-tag">Project Management</div><div class="rank-card-meta"><span>Mar 31, 2026</span><span>12 min read</span></div></div>
-      </a>
-      <a href="/pages/erp-rankings.html" class="rank-card">
-        <div class="rank-card-top erp"><span class="rank-card-badge updated">Live</span><div class="rank-card-top-title">Best ERP Software &mdash; 2026 Rankings</div><div class="rank-card-top-count">10 products &middot; 38,000+ reviews analyzed</div></div>
-        <div class="rank-card-body"><div class="rank-card-tag">ERP</div><div class="rank-card-meta"><span>Mar 31, 2026</span><span>12 min read</span></div></div>
       </a>
     </div>
   </div>
@@ -286,7 +290,7 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
 
 <section class="cta">
   <h2>Is your software missing<br>from our rankings?</h2>
-  <p>Claim your product profile to verify your listing, or upgrade to a Featured placement for premium visibility across our network.</p>
+  <p>Claim your product profile to verify your listing, or upgrade to an Enhanced Listing for premium visibility across our network. Position #1 is editorial-only and never sold.</p>
   <a href="/pages/pricing.html" class="cta-btn">View Listing Plans &rarr;</a>
 </section>
 
@@ -297,15 +301,15 @@ body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-we
         <div class="footer-logo">Si</div>
         <div class="footer-brand-name">Software Industry <span>Reviews</span></div>
       </div>
-      <p class="footer-desc">Independent, data-driven rankings of the best software platforms across 9 categories. Part of the Listicle Liaison publishing network.</p>
+      <p class="footer-desc">Independent, data-driven rankings of business software across multiple categories. Part of the Listicle Liaison publishing network.</p>
     </div>
     <div class="footer-col">
       <div class="footer-col-title">Rankings</div>
+      <a href="/pages/smb-software-rankings.html">SMB Software</a>
       <a href="/pages/crm-rankings.html">CRM Software</a>
       <a href="/pages/pm-rankings.html">Project Management</a>
       <a href="/pages/cyber-rankings.html">Cybersecurity</a>
       <a href="/pages/erp-rankings.html">ERP Systems</a>
-      <a href="/pages/email-rankings.html">Email Marketing</a>
     </div>
     <div class="footer-col">
       <div class="footer-col-title">Our Network</div>
