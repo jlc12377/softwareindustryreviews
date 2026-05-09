@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software Industry Reviews — Trusted Software Rankings & Expert Analysis</title>
+<meta name="description" content="Independent, data-driven software rankings built on transparent methodology. We rank the best CRM, ERP, project management, cybersecurity, and SMB software based on real user reviews and expert analysis.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://softwareindustryreviews.com/">
+<meta property="og:title" content="Software Industry Reviews — Trusted Software Rankings">
+<meta property="og:description" content="Independent, data-driven software rankings. 1,840+ products reviewed across 42 categories.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://softwareindustryreviews.com/">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#0c1b2e;--navy-mid:#152844;--navy-light:#1e3a5f;
+  --sky:#3b82f6;--sky-soft:#60a5fa;--sky-pale:#e0edff;--sky-wash:#f0f6ff;
+  --emerald:#10b981;--emerald-dark:#059669;--emerald-pale:#d1fae5;--emerald-wash:#ecfdf5;
+  --amber:#d97706;--amber-pale:#fef3c7;
+  --gold:#eab308;--gold-bg:#fefce8;
+  --surface:#ffffff;--surface-2:#f7f8fa;--surface-3:#eef0f4;
+  --ink:#0f172a;--ink-2:#334155;--ink-3:#64748b;--ink-4:#94a3b8;
+  --border:#e2e8f0;--border-light:#f1f5f9;
+  --radius:8px;--radius-lg:12px;--radius-xl:16px;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.05);
+  --shadow-md:0 4px 12px rgba(15,23,42,.08);
+  --shadow-lg:0 12px 40px rgba(15,23,42,.1);
+  --font-display:'Instrument Serif',Georgia,serif;
+  --font-body:'Outfit',-apple-system,sans-serif;
+  --max-w:1200px;--nav-h:60px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--ink);background:var(--surface);-webkit-font-smoothing:antialiased;line-height:1.6}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.fade-up{animation:fadeUp .6s ease both}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border-light);height:var(--nav-h);transition:box-shadow .3s}
+.nav.scrolled{box-shadow:var(--shadow-sm);border-color:var(--border)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 28px;height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-mark{width:32px;height:32px;border-radius:8px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:18px;color:#fff;font-style:italic;letter-spacing:-1px}
+.nav-logo-text{font-size:15px;font-weight:600;color:var(--ink);letter-spacing:-.3px}
+.nav-logo-text span{color:var(--sky)}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:13.5px;font-weight:500;color:var(--ink-2);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--sky)}
+.nav-cta{background:var(--navy)!important;color:#fff!important;padding:8px 18px!important;border-radius:6px!important;font-weight:600!important;transition:background .2s!important}
+.nav-cta:hover{background:var(--navy-mid)!important}
+.mobile-menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:4px}
+.mobile-menu-btn span{display:block;width:20px;height:2px;background:var(--ink);border-radius:1px;transition:all .2s}
+.hero{padding:calc(var(--nav-h) + 56px) 28px 72px;background:var(--navy);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 80%,rgba(59,130,246,.12) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(16,185,129,.08) 0%,transparent 50%);pointer-events:none}
+.hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-inner{max-width:var(--max-w);margin:0 auto;position:relative;z-index:1;display:grid;grid-template-columns:1fr 400px;gap:56px;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.25);padding:5px 14px;border-radius:20px;font-size:12px;font-weight:600;color:var(--sky-soft);letter-spacing:.04em;text-transform:uppercase;margin-bottom:20px}
+.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--emerald);animation:pulse 2s ease infinite}
+.hero h1{font-family:var(--font-display);font-size:52px;font-weight:400;line-height:1.12;letter-spacing:-1.5px;color:#fff;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--sky-soft)}
+.hero-sub{font-size:16.5px;color:rgba(255,255,255,.6);max-width:480px;margin-bottom:36px;line-height:1.7}
+.hero-search{display:flex;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);overflow:hidden;max-width:500px;transition:border-color .2s}
+.hero-search:focus-within{border-color:rgba(59,130,246,.5);background:rgba(255,255,255,.12)}
+.hero-search input{flex:1;border:none;padding:14px 18px;font-size:14px;font-family:var(--font-body);outline:none;color:#fff;background:transparent}
+.hero-search input::placeholder{color:rgba(255,255,255,.35)}
+.hero-search button{background:var(--sky);color:#fff;border:none;padding:14px 24px;font-family:var(--font-body);font-size:13px;font-weight:600;cursor:pointer;transition:background .2s;white-space:nowrap}
+.hero-search button:hover{background:var(--sky-soft)}
+.hero-metrics{display:flex;gap:32px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,.08)}
+.hero-metric-num{font-family:var(--font-display);font-size:32px;color:#fff;letter-spacing:-1px;line-height:1}
+.hero-metric-label{font-size:12px;color:rgba(255,255,255,.4);font-weight:500;margin-top:4px}
+.hero-sidebar{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-xl);padding:24px;backdrop-filter:blur(8px)}
+.hero-sidebar-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--sky-soft);margin-bottom:18px;display:flex;align-items:center;gap:8px}
+.hero-sidebar-item{display:flex;align-items:start;gap:14px;padding:14px 10px;margin:0 -10px;border-radius:8px;text-decoration:none;transition:background .15s;cursor:pointer}
+.hero-sidebar-item:hover{background:rgba(255,255,255,.06)}
+.hero-sidebar-item+.hero-sidebar-item{border-top:1px solid rgba(255,255,255,.06)}
+.hero-sidebar-rank{width:28px;height:28px;border-radius:6px;background:rgba(59,130,246,.15);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--sky-soft);flex-shrink:0;margin-top:2px}
+.hero-sidebar-text{font-size:14px;font-weight:500;color:rgba(255,255,255,.85);line-height:1.35}
+.hero-sidebar-meta{font-size:11.5px;color:rgba(255,255,255,.35);margin-top:3px;display:flex;gap:10px}
+.hero-sidebar-score{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:600;color:var(--emerald)}
+.trust-bar{background:var(--surface-2);border-bottom:1px solid var(--border-light);padding:16px 28px}
+.trust-bar-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:40px;font-size:12px;color:var(--ink-4);font-weight:500}
+.trust-bar-inner span{display:flex;align-items:center;gap:6px}
+.section{max-width:var(--max-w);margin:0 auto;padding:72px 28px}
+.bg-cool{background:var(--surface-2);max-width:100%;padding:72px 0}
+.bg-cool .container{max-width:var(--max-w);margin:0 auto;padding:0 28px}
+.section-eyebrow{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--sky);margin-bottom:8px}
+.section-title{font-family:var(--font-display);font-size:34px;font-weight:400;letter-spacing:-.8px;color:var(--ink);line-height:1.2}
+.section-sub{font-size:15px;color:var(--ink-3);margin-top:8px;max-width:500px}
+.section-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:36px}
+.section-more{font-size:13px;font-weight:600;color:var(--sky);text-decoration:none;white-space:nowrap}
+.section-more:hover{text-decoration:underline}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 18px;text-decoration:none;color:var(--ink);transition:all .25s;position:relative;overflow:hidden}
+.cat-card:hover{border-color:var(--sky);box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.cat-card-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.cat-card-icon.blue{background:var(--sky-wash)}.cat-card-icon.green{background:var(--emerald-wash)}.cat-card-icon.amber{background:var(--amber-pale)}.cat-card-icon.slate{background:var(--surface-3)}.cat-card-icon.gold{background:var(--gold-bg)}
+.cat-card-name{font-size:14.5px;font-weight:600;margin-bottom:2px}
+.cat-card-count{font-size:12.5px;color:var(--ink-4)}
+.cat-card-arrow{position:absolute;top:18px;right:16px;font-size:14px;color:var(--ink-4);transition:all .2s;opacity:0;transform:translateX(-4px)}
+.cat-card:hover .cat-card-arrow{opacity:1;transform:translateX(0)}
+.cat-card.featured{border:1.5px solid var(--gold);background:linear-gradient(135deg,#fefce8 0%,#fef9c3 100%)}
+.cat-card-tag{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);background:#fff;padding:2px 7px;border-radius:3px;margin-bottom:10px;border:1px solid var(--amber-pale)}
+.rankings-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rank-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:var(--ink);transition:all .25s}
+.rank-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.rank-card-top{height:160px;padding:20px;position:relative;display:flex;flex-direction:column;justify-content:flex-end}
+.rank-card-top.crm{background:linear-gradient(135deg,#0c1b2e,#1e3a5f)}.rank-card-top.pm{background:linear-gradient(135deg,#0c2920,#134e3a)}.rank-card-top.erp{background:linear-gradient(135deg,#1e1b2e,#3b2e5a)}.rank-card-top.smb{background:linear-gradient(135deg,#451a03,#9a3412)}
+.rank-card-badge{position:absolute;top:14px;left:14px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:4px;color:#fff}
+.rank-card-badge.updated{background:var(--sky)}
+.rank-card-badge.new{background:var(--emerald)}
+.rank-card-top-title{font-family:var(--font-display);font-size:20px;color:#fff;line-height:1.25}
+.rank-card-top-count{font-size:12px;color:rgba(255,255,255,.5);margin-top:6px}
+.rank-card-body{padding:18px 20px}
+.rank-card-tag{font-size:11.5px;font-weight:600;color:var(--sky);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.rank-card-meta{font-size:12.5px;color:var(--ink-4);display:flex;gap:14px}
+.method-section{background:var(--surface-2);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light)}
+.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:36px}
+.method-card{text-align:center;padding:24px 12px}
+.method-num{width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:18px;font-style:italic;margin:0 auto 14px}
+.method-label{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.method-desc{font-size:13px;color:var(--ink-3);line-height:1.55}
+.cta{background:var(--navy);text-align:center;padding:80px 28px;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(59,130,246,.1) 0%,transparent 50%),radial-gradient(ellipse at 70% 60%,rgba(16,185,129,.06) 0%,transparent 40%);pointer-events:none}
+.cta h2{font-family:var(--font-display);font-size:36px;font-weight:400;color:#fff;letter-spacing:-.8px;margin-bottom:12px;position:relative}
+.cta p{font-size:16px;color:rgba(255,255,255,.5);margin-bottom:28px;max-width:460px;margin-left:auto;margin-right:auto;position:relative}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--sky);color:#fff;font-size:14px;font-weight:600;border-radius:8px;text-decoration:none;transition:background .2s;position:relative}
+.cta-btn:hover{background:var(--sky-soft)}
+.footer{background:var(--ink);padding:64px 28px 40px}
+.footer-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+.footer-brand-mark{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.footer-logo{width:28px;height:28px;border-radius:6px;background:var(--sky);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:16px;color:#fff;font-style:italic}
+.footer-brand-name{font-size:14px;font-weight:600;color:#fff}.footer-brand-name span{color:var(--sky-soft)}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.35);line-height:1.6;max-width:280px}
+.footer-col-title{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.5);margin-bottom:16px}
+.footer-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.4);text-decoration:none;margin-bottom:10px;transition:color .2s}
+.footer-col a:hover{color:var(--sky-soft)}
+.footer-bottom{max-width:var(--max-w);margin:40px auto 0;padding:20px 0 0;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.25)}
+.footer-bottom a{color:rgba(255,255,255,.3);text-decoration:none;margin-left:20px}.footer-bottom a:hover{color:rgba(255,255,255,.5)}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:36px}
+  .hero h1{font-size:36px}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .rankings-grid{grid-template-columns:1fr}
+  .method-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .nav-links{display:none;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--surface);flex-direction:column;padding:20px 28px;border-bottom:1px solid var(--border);gap:16px;box-shadow:var(--shadow-md)}
+  .nav-links.open{display:flex}
+  .mobile-menu-btn{display:flex}
+  .trust-bar-inner{flex-wrap:wrap;gap:16px;justify-content:center}
+  .hero-metrics{gap:20px;flex-wrap:wrap}
+  .section-header{flex-direction:column;align-items:flex-start;gap:12px}
+}
+@media(max-width:480px){
+  .cat-grid{grid-template-columns:1fr}
+  .hero h1{font-size:30px}
+  .section-title{font-size:26px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Software Industry Reviews",
+      "url": "https://softwareindustryreviews.com",
+      "description": "Independent, data-driven rankings of business software across CRM, project management, cybersecurity, ERP, SMB software, email marketing, HR, accounting, and analytics.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Listicle Liaison LLC",
+        "url": "https://listicleliaison.com",
+        "contactPoint": {"@type": "ContactPoint", "email": "partnerships@listicleliaison.com", "contactType": "sales"},
+        "sameAs": ["https://aiindustryreviews.com","https://healthcareindustryreviews.com","https://financialindustryreviews.com","https://cryptoindustryreviews.com","https://casinoindustryreviews.com","https://miningindustryreviews.com","https://smbnewsroom.com","https://ai-mentions.com","https://listicleliaison.com"]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">
+      <div class="nav-logo-mark">Si</div>
+      <div class="nav-logo-text">Software Industry <span>Reviews</span></div>
+    </a>
+    <div class="nav-links"><a href="/">Home</a><a href="/#categories">Rankings</a><a href="/pages/research.html">Research</a><a href="/pages/methodology.html">Methodology</a><a href="/pages/pricing.html" class="nav-cta">Get Listed</a></div>
+    <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="fade-up">
+      <div class="hero-tag"><span class="hero-tag-dot"></span> Rankings updated May 2026</div>
+      <h1>The Most Trusted<br>Software <em>Rankings</em><br>on the Internet.</h1>
+      <p class="hero-sub">We analyze real user reviews, feature depth, pricing transparency, and market presence to rank software across 40+ categories. No pay-to-play. No guesswork.</p>
+      <div class="hero-search">
+        <input type="text" placeholder="Search software categories, products, or vendors..." />
+        <button type="button">Search</button>
+      </div>
+      <div class="hero-metrics">
+        <div><div class="hero-metric-num">1,840+</div><div class="hero-metric-label">Products Reviewed</div></div>
+        <div><div class="hero-metric-num">42</div><div class="hero-metric-label">Categories</div></div>
+        <div><div class="hero-metric-num">380k+</div><div class="hero-metric-label">Data Points Analyzed</div></div>
+      </div>
+    </div>
+    <div class="hero-sidebar fade-up" style="animation-delay:.2s">
+      <div class="hero-sidebar-title">Trending rankings</div>
+      <a href="/pages/smb-software-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">01</div><div><div class="hero-sidebar-text">Best All-in-One Software for SMBs</div><div class="hero-sidebar-meta"><span>10 products</span><span class="hero-sidebar-score">4.6 avg</span></div></div></a>
+      <a href="/pages/crm-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">02</div><div><div class="hero-sidebar-text">Best CRM Software for Enterprise</div><div class="hero-sidebar-meta"><span>12 products</span><span class="hero-sidebar-score">4.7 avg</span></div></div></a>
+      <a href="/pages/pm-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">03</div><div><div class="hero-sidebar-text">Best Project Management Software</div><div class="hero-sidebar-meta"><span>10 products</span><span class="hero-sidebar-score">4.5 avg</span></div></div></a>
+      <a href="/pages/erp-rankings.html" class="hero-sidebar-item"><div class="hero-sidebar-rank">04</div><div><div class="hero-sidebar-text">Best ERP Software — 2026</div><div class="hero-sidebar-meta"><span>10 products</span><span class="hero-sidebar-score">4.4 avg</span></div></div></a>
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <span>Independent & Unbiased</span>
+    <span>Transparent Methodology</span>
+    <span>Updated Monthly</span>
+    <span>Cited by Leading Publications</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow" id="categories">Categories</div>
+      <h2 class="section-title">Browse by software category</h2>
+    </div>
+    <a href="#categories" class="section-more">All categories &darr;</a>
+  </div>
+  <div class="cat-grid">
+    <a href="/pages/smb-software-rankings.html" class="cat-card featured"><span class="cat-card-tag">New</span><div class="cat-card-icon gold"></div><div class="cat-card-name">All-in-One Software for SMBs</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+    <a href="/pages/crm-rankings.html" class="cat-card"><div class="cat-card-icon blue"></div><div class="cat-card-name">CRM Software</div><div class="cat-card-count">12 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+    <a href="/pages/pm-rankings.html" class="cat-card"><div class="cat-card-icon green"></div><div class="cat-card-name">Project Management</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+    <a href="/pages/cyber-rankings.html" class="cat-card"><div class="cat-card-icon amber"></div><div class="cat-card-name">Cybersecurity</div><div class="cat-card-count">10 platforms ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+    <a href="/pages/erp-rankings.html" class="cat-card"><div class="cat-card-icon slate"></div><div class="cat-card-name">ERP Systems</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+    <a href="/pages/email-rankings.html" class="cat-card"><div class="cat-card-icon blue"></div><div class="cat-card-name">Email Marketing</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+    <a href="/pages/hr-rankings.html" class="cat-card"><div class="cat-card-icon green"></div><div class="cat-card-name">HR & Payroll</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+    <a href="/pages/accounting-rankings.html" class="cat-card"><div class="cat-card-icon amber"></div><div class="cat-card-name">Accounting</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+    <a href="/pages/analytics-rankings.html" class="cat-card"><div class="cat-card-icon slate"></div><div class="cat-card-name">Analytics & BI</div><div class="cat-card-count">10 products ranked</div><span class="cat-card-arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<section class="section bg-cool">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow">Latest</div>
+        <h2 class="section-title">Recently published rankings</h2>
+      </div>
+      <a href="#categories" class="section-more">All rankings &darr;</a>
+    </div>
+    <div class="rankings-grid">
+      <a href="/pages/smb-software-rankings.html" class="rank-card">
+        <div class="rank-card-top smb"><span class="rank-card-badge new">New</span><div class="rank-card-top-title">Best All-in-One Software for SMBs &mdash; 2026</div><div class="rank-card-top-count">10 products &middot; 240,000+ reviews analyzed</div></div>
+        <div class="rank-card-body"><div class="rank-card-tag">SMB Software</div><div class="rank-card-meta"><span>May 9, 2026</span><span>9 min read</span></div></div>
+      </a>
+      <a href="/pages/crm-rankings.html" class="rank-card">
+        <div class="rank-card-top crm"><span class="rank-card-badge updated">Live</span><div class="rank-card-top-title">Best CRM Software for Enterprise — 2026</div><div class="rank-card-top-count">12 products &middot; 86,000+ reviews analyzed</div></div>
+        <div class="rank-card-body"><div class="rank-card-tag">CRM</div><div class="rank-card-meta"><span>Mar 30, 2026</span><span>14 min read</span></div></div>
+      </a>
+      <a href="/pages/pm-rankings.html" class="rank-card">
+        <div class="rank-card-top pm"><span class="rank-card-badge updated">Live</span><div class="rank-card-top-title">Best Project Management Software — 2026</div><div class="rank-card-top-count">10 products &middot; 72,000+ reviews analyzed</div></div>
+        <div class="rank-card-body"><div class="rank-card-tag">Project Management</div><div class="rank-card-meta"><span>Mar 31, 2026</span><span>12 min read</span></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="method-section">
+  <div class="section">
+    <div style="text-align:center;max-width:560px;margin:0 auto">
+      <div class="section-eyebrow" style="text-align:center">Our process</div>
+      <h2 class="section-title" style="text-align:center">How we rank software</h2>
+      <p class="section-sub" style="margin:8px auto 0;text-align:center">Transparent, data-driven rankings built on publicly verifiable criteria. Sponsored placements are always disclosed.</p>
+    </div>
+    <div class="method-grid">
+      <div class="method-card"><div class="method-num">1</div><div class="method-label">Aggregate reviews</div><div class="method-desc">We pull verified user reviews from G2, Capterra, TrustRadius, and direct submissions to build a composite score.</div></div>
+      <div class="method-card"><div class="method-num">2</div><div class="method-label">Evaluate features</div><div class="method-desc">Our editorial team maps each product's feature set against category-specific criteria and buyer requirements.</div></div>
+      <div class="method-card"><div class="method-num">3</div><div class="method-label">Score & rank</div><div class="method-desc">Products are scored on user satisfaction, feature depth, pricing clarity, support quality, and market presence.</div></div>
+      <div class="method-card"><div class="method-num">4</div><div class="method-label">Update monthly</div><div class="method-desc">Rankings refresh every 30 days with new review data. Products can claim profiles to verify and enrich their listings.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Is your software missing<br>from our rankings?</h2>
+  <p>Claim your product profile to verify your listing, or upgrade to an Enhanced Listing for premium visibility across our network. Position #1 is editorial-only and never sold.</p>
+  <a href="/pages/pricing.html" class="cta-btn">View Listing Plans &rarr;</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-mark">
+        <div class="footer-logo">Si</div>
+        <div class="footer-brand-name">Software Industry <span>Reviews</span></div>
+      </div>
+      <p class="footer-desc">Independent, data-driven rankings of business software across multiple categories. Part of the Listicle Liaison publishing network.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Rankings</div>
+      <a href="/pages/smb-software-rankings.html">SMB Software</a>
+      <a href="/pages/crm-rankings.html">CRM Software</a>
+      <a href="/pages/pm-rankings.html">Project Management</a>
+      <a href="/pages/cyber-rankings.html">Cybersecurity</a>
+      <a href="/pages/erp-rankings.html">ERP Systems</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Our Network</div>
+      <a href="https://aiindustryreviews.com">AI Industry Reviews</a>
+      <a href="https://healthcareindustryreviews.com">Healthcare Industry Reviews</a>
+      <a href="https://financialindustryreviews.com">Financial Industry Reviews</a>
+      <a href="https://cryptoindustryreviews.com">Crypto Industry Reviews</a>
+      <a href="https://casinoindustryreviews.com">Casino Industry Reviews</a>
+      <a href="https://miningindustryreviews.com">Mining Industry Reviews</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Tools &amp; Media</div>
+      <a href="https://ai-mentions.com">AI Mentions</a>
+      <a href="https://smbnewsroom.com">SMB Newsroom</a>
+      <a href="https://listicleliaison.com">Listicle Liaison</a>
+      <a href="/pages/methodology.html">Methodology</a>
+      <a href="/pages/pricing.html">Get Listed</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Listicle Liaison LLC. All rights reserved.</span>
+    <span><a href="/pages/disclosure.html">Disclosure</a></span>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>10)});
+</script>
+</body>
+</html>
