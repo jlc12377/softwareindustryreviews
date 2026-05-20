@@ -67,4 +67,4 @@ User-agent: YouBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://softwareindustryreviews.com/sitemap.xml
+Sitemap: https://www.softwareindustryreviews.com/sitemap.xml
