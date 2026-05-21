@@ -1,4 +1,4 @@
-# robots.txt for softwareindustryreviews.com
+# robots.txt for www.softwareindustryreviews.com
 # Last updated: April 2026
 
 # Standard search engine crawlers
@@ -67,4 +67,4 @@ User-agent: YouBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://softwareindustryreviews.com/sitemap.xml
+Sitemap: https://www.softwareindustryreviews.com/sitemap.xml
